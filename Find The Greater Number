@@ -1,0 +1,32 @@
+#!/bin/bash
+
+##########################################
+# Author : SAI VIRAJ CHETI
+# GMAIL ID: cheti.viraj@gmail.com
+# Version: V.0.1
+# Date: 05/08/2024
+# File: This Script is to check which entered Integer is Greater and smaller
+###########################################
+
+# This is my first script uploading in to GIT Hub which kept as Basic as possible.
+
+# User can enter values as required
+A=$1
+B=$2
+C=$3
+D=$4
+
+# To display the values entered
+        echo "Entered values are:" $A $B $C $D
+
+# Using IF statements we are giving conditions for each VAR.
+        if [ $A -gt $B ] && [ $A -gt $C ] && [ $A -gt $D ]; then
+echo "A value is greater:"$A
+        elif [ $B -gt $A ] && [ $B -gt $C ] && [ $B -gt $D ]; then
+echo "B value is greater:"$B
+        elif [ $C -gt $A ] && [ $C -gt $B ] && [ $C -gt $D ]; then
+echo "C value is greater:"$C
+        elif [ $D -gt $A ] && [ $D -gt $B ] && [ $D -gt $C ]; then
+echo "D value is greater:"$D
+fi
+
